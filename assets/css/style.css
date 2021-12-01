@@ -1,0 +1,253 @@
+body{
+    background:black;
+    margin: 0;
+}
+p, h1, a, li, footer{
+    color: white;
+}
+.wrapper{
+    width:100%;
+    min-height: 100vh;
+    background: url("..//image/IMG_8483.JPG") center center / cover no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.os_title{
+    height: 230px;
+}
+#os_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin-right: 40px;
+}
+#os_nav a{
+    margin-top: 20px;
+}
+.menu nav ul, #gallery nav ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.menu nav ul li a:hover{
+    cursor: pointer;
+}
+.menu nav ul li a:hover::before,.menu nav ul li a:hover::after{
+    padding:5px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+.menu nav ul li a:hover::before {
+    border-left: solid 2px white;
+    border-top: solid 2px white;
+    left: 0;
+}
+.menu nav ul li a:hover::after {
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+    right: 0;
+}
+
+#gallery nav .slider, #gallery nav .center{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 20px;
+}
+.menu nav ul li a{
+    text-decoration: none;
+}
+.os_title, .menu{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    margin-top: -40px;
+}
+.os_title p{
+    padding-top: 40px;
+    font-size: 65px;
+    font-family: 'Monsieur La Doulaise';
+}
+#scroll{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        margin: auto;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        animation: move 2s infinite;
+}
+.subtitle{
+    font-family: 'Rouge Script';
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left:5%;
+}
+.page1 p{
+    margin-left: 7%;
+}
+.container{
+    width:30%;
+    text-align: center;
+}
+.container li{
+    display: flex;
+    align-items: center;
+}
+.container h1{
+    padding-bottom: 25px;
+}
+.footer #os_nav, .footer #mail, .footerg #os_nav, .footerg #mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40px;
+}
+.footer #os_nav a, .footer #os_nav a{
+    margin-top: 0;
+}
+.footer, .footerg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.footer p, .footerg p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin-right: 40px;
+}
+.footerg{
+    margin-top: 0;
+}
+
+.os_title i{
+    position: absolute;
+    background:white;
+    border-radius:50%;
+    animation: animate linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform:translateY(0);
+    }
+    10%, 90%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.lsback{
+    width:100%;
+    background: url("..//image/IMG_8449.JPG") 50% 75%/ cover no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.lsback p{
+    margin-top: -30px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-family: 'Monsieur La Doulaise';
+    text-align: center;
+}
+#ham{
+    margin-top: -60px;
+    margin-left: 50px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.stitle .subtitle{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+}
+.scroll2{
+    background:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.scroll2 ul{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+}
+.scroll2 .scrolll, .scroll2 .scrollr{
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    animation: move 2s infinite;
+}
+.menubar{
+    left: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border:10px;
+    width: 7%;
+    cursor: pointer;
+    padding-right: 20px;
+	display: none;
+    margin-top: -20px;
+    text-align: center;
+    padding: 0;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	       transition: opacity 0.2s;
+}
+#os_header nav:hover .menubar {
+    display: block;
+	opacity: 0.75;
+	visibility: visible;
+}
+#os_header nav:hover .menubar ul li{
+    list-style: none;
+    gap:10px;
+}
+#os_header nav:hover .menubar ul li a{
+    color:black;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menubar ul{
+    margin:0;
+    padding: 0;
+}

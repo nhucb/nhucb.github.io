@@ -1,0 +1,26 @@
+.scrollr, .scrolll {
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: move 2s infinite;
+    visibility: hidden;
+}
+.scrollr{
+    left:-5%;
+    transform: rotate(-45deg);
+}
+.scrolll{
+    right:-5%;
+    transform: rotate(135deg);
+}
+.slider li img{
+    width: 250px;
+}
+
